@@ -2,43 +2,16 @@
 
 > Detect the archive type of a Buffer/Uint8Array
 
+*See [archive-type](https://github.com/kevva/archive-type) for the programmatic API and issue tracker.*
 
 ## Install
 
 ```
-$ npm install --save archive-type
+$ npm install --global archive-type-cli
 ```
 
 
 ## Usage
-
-```js
-var read = require('fs').readFileSync;
-var archiveType = require('archive-type');
-
-archiveType(read('foo.zip'));
-//=> {ext: 'zip', mime: 'application/zip'}
-```
-
-
-## API
-
-### archiveType(buf)
-
-Returns [`7z`](https://github.com/kevva/is-7zip), [`bz2`](https://github.com/kevva/is-bzip2), [`gz`](https://github.com/kevva/is-gzip), [`rar`](https://github.com/kevva/is-rar), [`tar`](https://github.com/kevva/is-tar), [`zip`](https://github.com/kevva/is-zip) or `false`.
-
-#### buf
-
-Type: `buffer` *(Node.js)*, `uint8array`
-
-It only needs the first 261 bytes.
-
-
-## CLI
-
-```
-$ npm install --global archive-type
-```
 
 ```
 $ archive-type --help

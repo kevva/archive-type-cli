@@ -1,0 +1,50 @@
+{
+  "name": "archive-type-cli",
+  "version": "1.0.0",
+  "description": "Detect the archive type of a Buffer/Uint8Array",
+  "license": "MIT",
+  "repository": "kevva/archive-type-cli",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Martensson",
+    "url": "github.com/kevva"
+  },
+  "bin": {
+    "archive-type": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "7zip",
+    "archive",
+    "buffer",
+    "bz2",
+    "bzip2",
+    "check",
+    "cli",
+    "cli-app",
+    "detect",
+    "gz",
+    "gzip",
+    "mime",
+    "rar",
+    "type",
+    "zip"
+  ],
+  "dependencies": {
+    "archive-type": "^2.1.0",
+    "get-stdin": "^4.0.1",
+    "meow": "^3.3.0",
+    "read-chunk": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.0.4"
+  }
+}
