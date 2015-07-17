@@ -1,4 +1,4 @@
-# archive-type [![Build Status](https://travis-ci.org/kevva/archive-type.svg?branch=master)](https://travis-ci.org/kevva/archive-type)
+# archive-type-cli [![Build Status](https://travis-ci.org/kevva/archive-type-cli.svg?branch=master)](https://travis-ci.org/kevva/archive-type-cli)
 
 > Detect the archive type of a Buffer/Uint8Array
 
