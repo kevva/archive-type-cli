@@ -39,8 +39,8 @@
     "zip"
   ],
   "dependencies": {
-    "archive-type": "^2.1.0",
-    "get-stdin": "^4.0.1",
+    "archive-type": "^3.2.0",
+    "get-stdin": "^5.0.1",
     "meow": "^3.3.0",
     "read-chunk": "^1.0.0"
   },

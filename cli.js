@@ -25,7 +25,7 @@ function run(data) {
 		process.exit(1);
 	}
 
-	console.log(type);
+	console.log(type.ext);
 }
 
 if (!cli.input.length && process.stdin.isTTY) {
