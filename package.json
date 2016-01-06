@@ -16,7 +16,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "ava"
   },
   "files": [
     "cli.js"
@@ -45,6 +45,7 @@
     "read-chunk": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^0.0.4"
+    "ava": "*",
+    "execa": "^0.1.1"
   }
 }

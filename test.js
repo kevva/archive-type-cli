@@ -1,13 +1,7 @@
-'use strict';
-var execFile = require('child_process').execFile;
-var path = require('path');
-var test = require('ava');
+import execa from 'execa';
+import test from 'ava';
 
-test('show help screen', function (t) {
-	t.plan(2);
-
-	execFile(path.join(__dirname, 'cli.js'), ['--help'], function (err, stdout) {
-		t.assert(!err, err);
-		t.assert(/Detect the archive type of a Buffer/.test(stdout), stdout);
-	});
+test('show help screen', async t => {
+	const ret = await execa('./cli.js', ['--help']);
+	t.regexTest(/Detect the archive type of a Buffer/, ret.stdout);
 });
