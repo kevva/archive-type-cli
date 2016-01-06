@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 'use strict';
-var archiveType = require('archive-type');
-var getStdin = require('get-stdin');
-var meow = require('meow');
-var readChunk = require('read-chunk');
+const archiveType = require('archive-type');
+const getStdin = require('get-stdin');
+const meow = require('meow');
+const readChunk = require('read-chunk');
 
-var cli = meow({
+const cli = meow({
 	help: [
 		'Usage',
 		'  $ archive-type <file>',
@@ -18,7 +18,7 @@ var cli = meow({
 });
 
 function run(data) {
-	var type = archiveType(new Buffer(data));
+	const type = archiveType(new Buffer(data));
 
 	if (!type) {
 		console.error('Not a recognized archive');
@@ -29,14 +29,7 @@ function run(data) {
 }
 
 if (!cli.input.length && process.stdin.isTTY) {
-	console.error([
-		'Specify a valid archive file',
-		'',
-		'Example',
-		'  $ archive-type foo.tar.gz',
-		'  $ cat foo.tar.gz | archive-type'
-	].join('\n'));
-
+	console.error('Specify a file');
 	process.exit(1);
 }
 
