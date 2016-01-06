@@ -2,7 +2,6 @@
 
 > Detect the archive type of a Buffer/Uint8Array
 
-*See [archive-type](https://github.com/kevva/archive-type) for the programmatic API and issue tracker.*
 
 ## Install
 
@@ -24,6 +23,12 @@ $ archive-type --help
     $ archive-type foo.tar.gz
     $ cat foo.tar.gz | archive-type
 ```
+
+
+## Related
+
+* [archive-type](https://github.com/kevva/archive-type) - API for this module
+* [file-type-cli](https://github.com/sindresorhus/file-type-cli) - Detect the file type of a file or stdin
 
 
 ## License
