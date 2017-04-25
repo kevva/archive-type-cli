@@ -1,7 +1,7 @@
 {
   "name": "archive-type-cli",
   "version": "2.0.0",
-  "description": "Detect the archive type of a Buffer/Uint8Array",
+  "description": "Detect the archive type of a file or stdin",
   "license": "MIT",
   "repository": "kevva/archive-type-cli",
   "author": {
@@ -39,14 +39,13 @@
     "zip"
   ],
   "dependencies": {
-    "archive-type": "^3.2.0",
-    "get-stdin": "^5.0.1",
+    "archive-type": "^4.0.0",
     "meow": "^3.3.0",
-    "read-chunk": "^1.0.0"
+    "read-chunk": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*",
-    "execa": "^0.1.1",
+    "execa": "^0.6.3",
     "xo": "*"
   }
 }

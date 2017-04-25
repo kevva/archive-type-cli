@@ -1,6 +1,6 @@
 # archive-type-cli [![Build Status](https://travis-ci.org/kevva/archive-type-cli.svg?branch=master)](https://travis-ci.org/kevva/archive-type-cli)
 
-> Detect the archive type of a Buffer/Uint8Array
+> Detect the archive type of a file or stdin
 
 
 ## Install
@@ -19,16 +19,18 @@ $ archive-type --help
     $ archive-type <file>
     $ cat <file> | archive-type
 
-  Example
-    $ archive-type foo.tar.gz
-    $ cat foo.tar.gz | archive-type
+  Examples
+    $ archive-type foo.zip
+    zip
+    $ cat foo.tar | archive-type
+    tar
 ```
 
 
 ## Related
 
-* [archive-type](https://github.com/kevva/archive-type) - API for this module
-* [file-type-cli](https://github.com/sindresorhus/file-type-cli) - Detect the file type of a file or stdin
+- [archive-type](https://github.com/kevva/archive-type) - API for this module
+- [file-type-cli](https://github.com/sindresorhus/file-type-cli) - Detect the file type of a file or stdin
 
 
 ## License
